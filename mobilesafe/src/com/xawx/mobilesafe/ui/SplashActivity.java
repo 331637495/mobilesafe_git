@@ -125,6 +125,11 @@ public class SplashActivity extends Activity {
 		builder.create().show();
 	}
 
+	/**
+	 * 异步下载
+	 * @author think
+	 *
+	 */
 	private class DownloadFileThreadTask implements Runnable {
 		private String path; // 服务器文件路径
 		private String filepath; // 本地文件路径

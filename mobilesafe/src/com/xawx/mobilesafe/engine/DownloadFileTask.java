@@ -41,7 +41,6 @@ public class DownloadFileTask {
 				fos.write(buffer, 0, len);
 				process += len;
 				pd.setProgress(process);
-				
 			}
 			fos.flush();
 			fos.close();

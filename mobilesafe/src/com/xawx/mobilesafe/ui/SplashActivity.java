@@ -1,20 +1,17 @@
 package com.xawx.mobilesafe.ui;
 
-import com.xawx.mobilesafe.R;
-import com.xawx.mobilesafe.R.layout;
-import com.xawx.mobilesafe.R.menu;
-
-import android.os.Bundle;
 import android.app.Activity;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
-import android.view.Menu;
+import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 import android.view.animation.AlphaAnimation;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.xawx.mobilesafe.R;
 
 public class SplashActivity extends Activity {
 

@@ -9,5 +9,7 @@
     <string name="main_screan">主界面</string>
     <string name="main_screan_item_text">功能名字</string>
     <string name="main_screan_item_image">我是功能图片</string>
+    <string name="main_title">手机卫士</string>
+    <string name="lost_protected">手机防盗</string>
 
 </resources>

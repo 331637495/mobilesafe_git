@@ -7,5 +7,7 @@
     <string name="notfound">版本号未知!</string>
     <string name="versioninfo">版本号</string>
     <string name="main_screan">主界面</string>
+    <string name="main_screan_item_text">功能名字</string>
+    <string name="main_screan_item_image">我是功能图片</string>
 
 </resources>

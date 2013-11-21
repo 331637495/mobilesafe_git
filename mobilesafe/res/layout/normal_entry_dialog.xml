@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:background="#ff404040" >
@@ -11,7 +11,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
-        android:text="设置密码"
+        android:text="登陆"
         android:textSize="26sp"
         android:textColor="@color/textcolor" />
 
@@ -31,28 +31,11 @@
             android:layout_marginBottom="6dp"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="14dp"
-            android:text="设置手机防盗密码"
+            android:text="请输入密码"
             android:textColor="#ff202020" />
 
         <EditText
-            android:id="@+id/et_first_entry_pwd"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:inputType="textPassword" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="6dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="10dp"
-            android:text="再次输入密码"
-            android:textColor="#ff202020" />
-
-        <EditText
-            android:id="@+id/et_first_entry_pwd_comfirm"
+            android:id="@+id/et_normal_entry_pwd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
@@ -71,7 +54,7 @@
         android:orientation="horizontal" >
 
         <Button
-            android:id="@+id/btn_first_dialog_ok"
+            android:id="@+id/btn_normal_dialog_ok"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="4dp"
@@ -79,7 +62,7 @@
             android:text="确定" />
 
         <Button
-            android:id="@+id/btn_first_dialog_cancel"
+            android:id="@+id/btn_normal_dialog_cancel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="4dp"

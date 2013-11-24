@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/text_title_style"
+        android:layout_marginLeft="8dp"
+        android:text="@string/setup4" />
+
+    <ImageView
+        style="@style/devide_line_style"
+        android:contentDescription="@string/devide_line" />
+
+    <TextView
+        style="@style/text_content_style"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/setup4_content1" />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/setup4_content2"
+        android:textColor="#ffffffff" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:gravity="center_horizontal"
+        android:layout_marginTop="25dp">
+        <ImageView 
+            android:contentDescription="@string/devide_line"
+           style="@style/image_status_off_style"/>
+
+         <ImageView
+             style="@style/image_status_on_style"
+             android:layout_marginLeft="5dp"
+             android:contentDescription="@string/devide_line" />
+
+          <ImageView
+              style="@style/image_status_off_style"
+              android:layout_marginLeft="5dp"
+              android:contentDescription="@string/devide_line" />
+
+           <ImageView
+               style="@style/image_status_off_style"
+               android:layout_marginLeft="5dp"
+               android:contentDescription="@string/devide_line" />
+
+    </LinearLayout>
+	
+    <RelativeLayout 
+         android:layout_width="match_parent"
+        android:layout_height="match_parent"  >
+        <Button  android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:drawableRight="@drawable/next"
+        android:text="@string/setup4_content3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+        
+        <Button  android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:drawableLeft="@drawable/previous"
+        android:text="@string/setup1_back"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"/>
+        
+        <ImageView android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:contentDescription="@string/devide_line"
+        android:src="@drawable/luyang"
+        android:layout_centerHorizontal="true" 
+        android:paddingTop="25dp"/>
+    </RelativeLayout>
+</LinearLayout>

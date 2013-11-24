@@ -11,5 +11,31 @@
     <string name="main_screan_item_image">我是功能图片</string>
     <string name="main_title">手机卫士</string>
     <string name="lost_protected">手机防盗</string>
-
+    <string name="setupguide1">设置向导1/4</string>
+     <string name="setupguide2">设置向导2/4</string>
+      <string name="setupguide3">设置向导3/4</string>
+       <string name="setupguide4">设置向导4/4</string>
+    <string name="setup1">1.欢迎使用手机防盗</string>
+     <string name="setup2">2.手机卡绑定</string>
+      <string name="setup3">3.设置安全号码</string>
+      <string name="setup4">4.恭喜您,设置完成</string>
+    <string name="devide_line">分割线</string>
+    <string name="setup1_content1">您的手机防盗卫士：</string>
+     <string name="setup2_content1">sim卡绑定后\n下次启动手机如果发现sim卡变更就会发送报警短信</string>
+      <string name="setup3_content1">sim卡更换后会把报警短信发送到该号码上</string>
+      <string name="setup3_content2">请输入或者选择安全号码</string>
+        <string name="setup3_content3">选择联系人</string>
+         <string name="setup4_content1">强烈建议您开启保护</string>
+         <string name="setup4_content2">保护未开启</string>
+          <string name="setup4_content3">完成&#160;&#160;&#160;&#160;&#160;&#160;</string>
+     <string name="setup1_content2">&#160;&#160;&#160;sim卡变更报警</string>
+      <string name="setup1_content3">&#160;&#160;&#160;gps追踪</string>
+       <string name="setup1_content4">&#160;&#160;&#160;远程销毁数据</string>
+        <string name="setup1_content5">&#160;&#160;&#160;远程锁屏</string>
+         <string name="setup1_back">&#160;&#160;&#160;上一步</string>
+          <string name="setup1_next">下一步&#160;&#160;&#160;</string>
+	 <string name="setup2_btn">绑定</string>
+	 <string name="setup2_checkbox">没有绑定</string>
+	 <string name="select_contact">选择联系人</string>
+	
 </resources>

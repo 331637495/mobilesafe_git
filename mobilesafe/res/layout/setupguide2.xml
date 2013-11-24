@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/text_title_style"
+        android:layout_marginLeft="8dp"
+        android:text="@string/setup2" />
+
+    <ImageView
+        style="@style/devide_line_style"
+        android:contentDescription="@string/devide_line" />
+
+    <TextView
+        style="@style/text_content_style"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/setup2_content1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_bind"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="@string/setup2_btn" />
+
+        <CheckBox
+            android:id="@+id/cb_bind"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:text="@string/setup2_checkbox"
+            android:textColor="#ffffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <ImageView
+            style="@style/image_status_off_style"
+            android:contentDescription="@string/devide_line" />
+
+        <ImageView
+            style="@style/image_status_on_style"
+            android:layout_marginLeft="5dp"
+            android:contentDescription="@string/devide_line" />
+
+        <ImageView
+            style="@style/image_status_off_style"
+            android:layout_marginLeft="5dp"
+            android:contentDescription="@string/devide_line" />
+
+        <ImageView
+            style="@style/image_status_off_style"
+            android:layout_marginLeft="5dp"
+            android:contentDescription="@string/devide_line" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/btn_next2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:drawableRight="@drawable/next"
+            android:text="@string/setup1_next" />
+
+        <Button
+            android:id="@+id/btn_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dp"
+            android:drawableLeft="@drawable/previous"
+            android:text="@string/setup1_back" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/devide_line"
+            android:paddingTop="20dp"
+            android:src="@drawable/bind" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -146,7 +146,16 @@ public class LostProtectedActivity extends Activity implements OnClickListener {
 			} else {
 				String realpwd = sp.getString("password", "");
 				if (realpwd.equals(MD5Encoder.encode(password))) {
-					Log.i(TAG, "加载手机防盗主界面");
+					if (issetup()) {
+						Log.i(TAG, "加载手机防盗主界面");
+					} else {
+						Log.i(TAG, "进入设置向导界面");
+						finish();
+						Intent intent2 = new Intent(LostProtectedActivity.this,
+								SetupGudie1Activity.class);
+						startActivity(intent2);
+					}
+
 				} else {
 					Toast.makeText(this, "密码错误", Toast.LENGTH_SHORT).show();
 					return;
@@ -162,6 +171,15 @@ public class LostProtectedActivity extends Activity implements OnClickListener {
 			break;
 		}
 
+	}
+
+	/**
+	 * 判断是否已经设置过了设置向导
+	 * 
+	 * @return true 设置过了 false 没有设置
+	 */
+	private boolean issetup() {
+		return sp.getBoolean("issetupalready", false);
 	}
 
 }

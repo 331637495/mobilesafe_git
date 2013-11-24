@@ -9,6 +9,8 @@ import android.content.DialogInterface.OnClickListener;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -37,11 +39,13 @@ public class MainActivity extends Activity implements OnItemClickListener {
 		setContentView(R.layout.mainscrean);
 		sp = this.getSharedPreferences("config", Context.MODE_PRIVATE);
 		gv_main = (GridView) this.findViewById(R.id.gv_main);
+		//消除GridView点击后的黄色背景,两种方法都可以
+//		gv_main.setSelector(new ColorDrawable(Color.TRANSPARENT));
+//		gv_main.setSelector(R.drawable.blank);
 		adapter = new MainUIAdapter(this);
 		gv_main.setAdapter(adapter);
 		gv_main.setOnItemClickListener(this);
 		gv_main.setOnItemLongClickListener(new OnItemLongClickListener() {
-
 			/**
 			 * 当gridview的条目被长时间点击后对应的回调函数
 			 * 

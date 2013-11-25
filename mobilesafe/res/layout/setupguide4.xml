@@ -21,6 +21,7 @@
         android:text="@string/setup4_content1" />
 
     <CheckBox
+        android:id="@+id/cb_isprotecting"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
@@ -31,52 +32,59 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal" 
+        android:layout_marginTop="25dp"
         android:gravity="center_horizontal"
-        android:layout_marginTop="25dp">
-        <ImageView 
-            android:contentDescription="@string/devide_line"
-           style="@style/image_status_off_style"/>
+        android:orientation="horizontal" >
 
-         <ImageView
-             style="@style/image_status_on_style"
-             android:layout_marginLeft="5dp"
-             android:contentDescription="@string/devide_line" />
+        <ImageView
+            style="@style/image_status_off_style"
+            android:contentDescription="@string/devide_line" />
 
-          <ImageView
-              style="@style/image_status_off_style"
-              android:layout_marginLeft="5dp"
-              android:contentDescription="@string/devide_line" />
+        <ImageView
+            style="@style/image_status_off_style"
+            android:layout_marginLeft="5dp"
+            android:contentDescription="@string/devide_line" />
 
-           <ImageView
-               style="@style/image_status_off_style"
-               android:layout_marginLeft="5dp"
-               android:contentDescription="@string/devide_line" />
+        <ImageView
+            style="@style/image_status_off_style"
+            android:layout_marginLeft="5dp"
+            android:contentDescription="@string/devide_line" />
 
+        <ImageView
+            style="@style/image_status_on_style"
+            android:layout_marginLeft="5dp"
+            android:contentDescription="@string/devide_line" />
     </LinearLayout>
-	
-    <RelativeLayout 
-         android:layout_width="match_parent"
-        android:layout_height="match_parent"  >
-        <Button  android:layout_width="wrap_content"
-        android:layout_height="wrap_content" 
-        android:drawableRight="@drawable/next"
-        android:text="@string/setup4_content3"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"/>
-        
-        <Button  android:layout_width="wrap_content"
-        android:layout_height="wrap_content" 
-        android:drawableLeft="@drawable/previous"
-        android:text="@string/setup1_back"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"/>
-        
-        <ImageView android:layout_width="wrap_content"
-        android:layout_height="wrap_content" 
-        android:contentDescription="@string/devide_line"
-        android:src="@drawable/luyang"
-        android:layout_centerHorizontal="true" 
-        android:paddingTop="25dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/btn_setup_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/next"
+            android:text="@string/setup4_content3" />
+
+        <Button
+            android:id="@+id/btn_previous4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:drawableLeft="@drawable/previous"
+            android:text="@string/setup1_back" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/devide_line"
+            android:paddingTop="25dp"
+            android:src="@drawable/luyang" />
     </RelativeLayout>
+
 </LinearLayout>

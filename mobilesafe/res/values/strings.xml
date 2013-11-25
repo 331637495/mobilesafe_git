@@ -27,7 +27,7 @@
         <string name="setup3_content3">选择联系人</string>
          <string name="setup4_content1">强烈建议您开启保护</string>
          <string name="setup4_content2">保护未开启</string>
-          <string name="setup4_content3">完成&#160;&#160;&#160;&#160;&#160;&#160;</string>
+          <string name="setup4_content3">完&#160;&#160;&#160;成&#160;&#160;&#160;&#160;&#160;&#160;</string>
      <string name="setup1_content2">&#160;&#160;&#160;sim卡变更报警</string>
       <string name="setup1_content3">&#160;&#160;&#160;gps追踪</string>
        <string name="setup1_content4">&#160;&#160;&#160;远程销毁数据</string>
@@ -37,5 +37,8 @@
 	 <string name="setup2_btn">绑定</string>
 	 <string name="setup2_checkbox">没有绑定</string>
 	 <string name="select_contact">选择联系人</string>
+	  <string name="main_number">安全手机号码：</string>
+	  <string name="cb_main">没有开启防盗保护</string>
+	   <string name="main_resetup">重新进入设置向导</string>
 	
 </resources>

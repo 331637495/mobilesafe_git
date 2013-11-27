@@ -3,6 +3,8 @@ package com.xawx.mobilesafe.ui;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
+import android.app.admin.DevicePolicyManager;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -17,6 +19,7 @@ import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 
 import com.xawx.mobilesafe.R;
+import com.xawx.mobilesafe.receiver.MyAdmin;
 
 public class SetupGudie4Activity extends Activity implements OnClickListener {
 
@@ -89,6 +92,8 @@ public class SetupGudie4Activity extends Activity implements OnClickListener {
 							public void onClick(DialogInterface dialog,
 									int which) {
 								finish();
+								cb_isprotecting.setText("手机防盗保护中");
+								cb_isprotecting.setChecked(true);
 								finishSetup();
 							}
 						});
@@ -117,6 +122,15 @@ public class SetupGudie4Activity extends Activity implements OnClickListener {
 		Editor editor = sp.edit();
 		editor.putBoolean("issetupalready", true);
 		editor.commit();
+
+		DevicePolicyManager manager = (DevicePolicyManager) getSystemService(DEVICE_POLICY_SERVICE);
+		ComponentName mAdminName = new ComponentName(this, MyAdmin.class);
+		if (!manager.isAdminActive(mAdminName)) {
+			Intent intent = new Intent(
+					DevicePolicyManager.ACTION_ADD_DEVICE_ADMIN);
+			intent.putExtra(DevicePolicyManager.EXTRA_DEVICE_ADMIN, mAdminName);
+			startActivity(intent);
+		}
 	}
 
 }

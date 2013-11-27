@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
     android:orientation="vertical" >
 
     <TextView
@@ -11,7 +12,8 @@
         android:layout_marginLeft="10dp"
         android:layout_marginTop="16dp"
         android:text="@string/main_number"
-        android:textSize="20sp" />
+        android:textSize="20sp" 
+        android:textColor="#ffaaffaa"/>
 
     <View
         android:layout_width="match_parent"
@@ -28,7 +30,8 @@
         android:layout_marginLeft="6dp"
         android:layout_marginTop="8dp"
         android:text="@string/cb_main"
-        android:textSize="20sp" />
+        android:textSize="20sp" 
+        android:textColor="#ffaaffaa"/>
     
      <View
          android:layout_width="match_parent"
@@ -45,6 +48,31 @@
         android:layout_marginLeft="10dp"
         android:layout_marginTop="16dp"
         android:text="@string/main_resetup"
-        android:textSize="20sp" />
+        android:textSize="20sp" 
+        android:textColor="#ffaaffaa"/>
+     
+      <TextView
+        style="@style/text_content_style"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/main_text1" />
+      
+      <TextView
+        style="@style/text_content_style"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/main_text2" />
+      
+      <TextView
+        style="@style/text_content_style"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/main_text3" />
+      
+      <TextView
+        style="@style/text_content_style"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/main_text4" />
 
 </LinearLayout>

@@ -40,5 +40,9 @@
 	  <string name="main_number">安全手机号码：</string>
 	  <string name="cb_main">没有开启防盗保护</string>
 	   <string name="main_resetup">重新进入设置向导</string>
+	    <string name="main_text1">发送&#160;&#160;#*location*#&#160;&#160;获取手机位置</string>
+	     <string name="main_text2">发送&#160;&#160;#*wipedata*#&#160;&#160;恢复出厂设置</string>
+	      <string name="main_text3">发送&#160;&#160;#*locknow*#&#160;&#160;手机加密锁屏</string>
+	       <string name="main_text4">发送&#160;&#160;#*alarm*#&#160;&#160;播放防盗音乐</string>
 	
 </resources>
